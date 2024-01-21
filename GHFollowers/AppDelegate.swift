@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  GHFollowers
-//
-//  Created by Igor Volkov on 21.01.2024.
-//
-
 import UIKit
 
 @main
