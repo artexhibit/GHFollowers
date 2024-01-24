@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B0C4F502B61922000459C8A /* FollowerListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0C4F4F2B61922000459C8A /* FollowerListVC.swift */; };
 		0B201EA52B5EF71900711E42 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B201EA42B5EF71900711E42 /* SearchVC.swift */; };
 		0B201EA72B5EF74C00711E42 /* FavouritesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B201EA62B5EF74C00711E42 /* FavouritesListVC.swift */; };
 		0B41F2E32B603F00008C2F54 /* GFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B41F2E22B603F00008C2F54 /* GFButton.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B0C4F4F2B61922000459C8A /* FollowerListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListVC.swift; sourceTree = "<group>"; };
 		0B201EA42B5EF71900711E42 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		0B201EA62B5EF74C00711E42 /* FavouritesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesListVC.swift; sourceTree = "<group>"; };
 		0B41F2E22B603F00008C2F54 /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				0B201EA42B5EF71900711E42 /* SearchVC.swift */,
 				0B201EA62B5EF74C00711E42 /* FavouritesListVC.swift */,
 				0B41F2E42B6042BD008C2F54 /* GFTextField.swift */,
+				0B0C4F4F2B61922000459C8A /* FollowerListVC.swift */,
 			);
 			path = GHFollowers;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 				0B201EA52B5EF71900711E42 /* SearchVC.swift in Sources */,
 				0B41F2E32B603F00008C2F54 /* GFButton.swift in Sources */,
 				0B9CD9002B5D864C004BB9A0 /* AppDelegate.swift in Sources */,
+				0B0C4F502B61922000459C8A /* FollowerListVC.swift in Sources */,
 				0B201EA72B5EF74C00711E42 /* FavouritesListVC.swift in Sources */,
 				0B9CD9022B5D864C004BB9A0 /* SceneDelegate.swift in Sources */,
 			);
