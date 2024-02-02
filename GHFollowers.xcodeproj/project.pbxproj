@@ -31,6 +31,7 @@
 		0BB9B86A2B6D558B0040C784 /* GFUserInfoHeaderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB9B8692B6D558B0040C784 /* GFUserInfoHeaderVC.swift */; };
 		0BB9B86C2B6D55EE0040C784 /* GFSecondaryTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB9B86B2B6D55EE0040C784 /* GFSecondaryTitleLabel.swift */; };
 		0BB9B86E2B6D5C510040C784 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB9B86D2B6D5C510040C784 /* Constants.swift */; };
+		0BDE4C5F2B6D6B2E00821FBF /* GFItemInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDE4C5E2B6D6B2E00821FBF /* GFItemInfoView.swift */; };
 		0BF9765C2B642D5100F27AD3 /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF9765B2B642D5000F27AD3 /* Follower.swift */; };
 		0BF9765E2B642E3C00F27AD3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF9765D2B642E3C00F27AD3 /* User.swift */; };
 /* End PBXBuildFile section */
@@ -63,6 +64,7 @@
 		0BB9B8692B6D558B0040C784 /* GFUserInfoHeaderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFUserInfoHeaderVC.swift; sourceTree = "<group>"; };
 		0BB9B86B2B6D55EE0040C784 /* GFSecondaryTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFSecondaryTitleLabel.swift; sourceTree = "<group>"; };
 		0BB9B86D2B6D5C510040C784 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0BDE4C5E2B6D6B2E00821FBF /* GFItemInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFItemInfoView.swift; sourceTree = "<group>"; };
 		0BF9765B2B642D5000F27AD3 /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
 		0BF9765D2B642E3C00F27AD3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				0B11685C2B6AC9B500F5E757 /* GFEmptyStateView.swift */,
+				0BDE4C5E2B6D6B2E00821FBF /* GFItemInfoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 				0BAEF73F2B66A324006FF642 /* GFAvatarImageView.swift in Sources */,
 				0B9CD9002B5D864C004BB9A0 /* AppDelegate.swift in Sources */,
 				0B0C4F562B61A0EB00459C8A /* GFAlertVC.swift in Sources */,
+				0BDE4C5F2B6D6B2E00821FBF /* GFItemInfoView.swift in Sources */,
 				0BAEF73D2B66A29C006FF642 /* FollowerCell.swift in Sources */,
 				0B87E6FB2B6581DA00411D08 /* GFError.swift in Sources */,
 				0BB9B86A2B6D558B0040C784 /* GFUserInfoHeaderVC.swift in Sources */,
