@@ -26,6 +26,7 @@
 		0B9CD9092B5D864D004BB9A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B9CD9082B5D864D004BB9A0 /* Assets.xcassets */; };
 		0B9CD90C2B5D864D004BB9A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B9CD90A2B5D864D004BB9A0 /* LaunchScreen.storyboard */; };
 		0B9CD9152B5D9597004BB9A0 /* ProjectBrief.md in Resources */ = {isa = PBXBuildFile; fileRef = 0B9CD9142B5D9597004BB9A0 /* ProjectBrief.md */; };
+		0BA212F22B6EAC0100D945FD /* GFItemInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA212F12B6EAC0100D945FD /* GFItemInfoVC.swift */; };
 		0BAEF73D2B66A29C006FF642 /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAEF73C2B66A29C006FF642 /* FollowerCell.swift */; };
 		0BAEF73F2B66A324006FF642 /* GFAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAEF73E2B66A324006FF642 /* GFAvatarImageView.swift */; };
 		0BB9B86A2B6D558B0040C784 /* GFUserInfoHeaderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB9B8692B6D558B0040C784 /* GFUserInfoHeaderVC.swift */; };
@@ -59,6 +60,7 @@
 		0B9CD90D2B5D864D004BB9A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B9CD9142B5D9597004BB9A0 /* ProjectBrief.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ProjectBrief.md; sourceTree = "<group>"; };
 		0B9CD9162B5D95FF004BB9A0 /* App Figma Layout.fig */ = {isa = PBXFileReference; lastKnownFileType = file; path = "App Figma Layout.fig"; sourceTree = "<group>"; };
+		0BA212F12B6EAC0100D945FD /* GFItemInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFItemInfoVC.swift; sourceTree = "<group>"; };
 		0BAEF73C2B66A29C006FF642 /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
 		0BAEF73E2B66A324006FF642 /* GFAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAvatarImageView.swift; sourceTree = "<group>"; };
 		0BB9B8692B6D558B0040C784 /* GFUserInfoHeaderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFUserInfoHeaderVC.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			children = (
 				0B0C4F552B61A0EB00459C8A /* GFAlertVC.swift */,
 				0BB9B8692B6D558B0040C784 /* GFUserInfoHeaderVC.swift */,
+				0BA212F12B6EAC0100D945FD /* GFItemInfoVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 				0B41F2E32B603F00008C2F54 /* GFButton.swift in Sources */,
 				0B0C4F582B61A6A800459C8A /* UIViewController+Ext.swift in Sources */,
 				0B7876762B6838D600BD5A20 /* UIHelper.swift in Sources */,
+				0BA212F22B6EAC0100D945FD /* GFItemInfoVC.swift in Sources */,
 				0BB9B86E2B6D5C510040C784 /* Constants.swift in Sources */,
 				0BAEF73F2B66A324006FF642 /* GFAvatarImageView.swift in Sources */,
 				0B9CD9002B5D864C004BB9A0 /* AppDelegate.swift in Sources */,
