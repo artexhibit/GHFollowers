@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0B03C1462B6C141B00CC31C4 /* UserInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B03C1452B6C141B00CC31C4 /* UserInfoVC.swift */; };
+		0B04F1772B72BDD300FA34B0 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B04F1762B72BDD300FA34B0 /* PersistenceManager.swift */; };
 		0B099DDA2B6FE50B0056613F /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B099DD92B6FE50B0056613F /* Date+Ext.swift */; };
 		0B099DDC2B6FE5390056613F /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B099DDB2B6FE5390056613F /* String+Ext.swift */; };
 		0B0C4F502B61922000459C8A /* FollowerListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0C4F4F2B61922000459C8A /* FollowerListVC.swift */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		0B03C1452B6C141B00CC31C4 /* UserInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoVC.swift; sourceTree = "<group>"; };
+		0B04F1762B72BDD300FA34B0 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 		0B099DD92B6FE50B0056613F /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		0B099DDB2B6FE5390056613F /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		0B0C4F4F2B61922000459C8A /* FollowerListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListVC.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				0B8C7BF32B6578BC008A6F1A /* NetworkManager.swift */,
+				0B04F1762B72BDD300FA34B0 /* PersistenceManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 				0BF9765C2B642D5100F27AD3 /* Follower.swift in Sources */,
 				0B0C4F522B619EC500459C8A /* GFTitleLabel.swift in Sources */,
 				0BB9B86C2B6D55EE0040C784 /* GFSecondaryTitleLabel.swift in Sources */,
+				0B04F1772B72BDD300FA34B0 /* PersistenceManager.swift in Sources */,
 				0B11685D2B6AC9B500F5E757 /* GFEmptyStateView.swift in Sources */,
 				0B8C7BF42B6578BC008A6F1A /* NetworkManager.swift in Sources */,
 				0B0C4F502B61922000459C8A /* FollowerListVC.swift in Sources */,
