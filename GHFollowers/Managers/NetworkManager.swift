@@ -71,6 +71,7 @@ class NetworkManager {
             do {
                 let decoder = JSONDecoder()
                 decoder.keyDecodingStrategy = .convertFromSnakeCase
+                decoder.dateDecodingStrategy = .iso8601
                 let user = try decoder.decode(User.self, from: data)
                 completed(.success(user))
             } catch {
@@ -78,6 +79,35 @@ class NetworkManager {
             }
         }
         
+        task.resume()
+    }
+    
+    func downloadImage(from urlString: String, completed: @escaping (UIImage?) -> Void) {
+        let casheKey = NSString(string: urlString)
+        
+        if let image = cashe.object(forKey: casheKey) {
+            completed(image)
+            return
+        }
+        
+        guard let url = URL(string: urlString) else {
+            completed(nil)
+            return
+        }
+        
+        let task = URLSession.shared.dataTask(with: url) { [weak self] data, responce, error in
+            guard let self,
+                error == nil,
+                let responce = responce as? HTTPURLResponse, responce.statusCode == 200,
+                let data,
+                let image = UIImage(data: data) else {
+                    completed(nil)
+                    return
+            }
+            
+            self.cashe.setObject(image, forKey: casheKey)
+            completed(image)
+        }
         task.resume()
     }
 }
