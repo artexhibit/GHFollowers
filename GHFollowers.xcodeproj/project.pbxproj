@@ -150,9 +150,9 @@
 		0B11685B2B6AC98E00F5E757 /* Labels */ = {
 			isa = PBXGroup;
 			children = (
+				0B0C4F512B619EC500459C8A /* GFTitleLabel.swift */,
 				0B0C4F532B61A01A00459C8A /* GFBodyLabel.swift */,
 				0BB9B86B2B6D55EE0040C784 /* GFSecondaryTitleLabel.swift */,
-				0B0C4F512B619EC500459C8A /* GFTitleLabel.swift */,
 			);
 			path = Labels;
 			sourceTree = "<group>";
