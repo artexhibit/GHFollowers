@@ -20,7 +20,6 @@ enum PersistenceManager {
                         completed(.alreadyInFavourites)
                         return
                     }
-                    
                     favourites.append(favourite)
                     
                 case .remove:
