@@ -16,6 +16,19 @@ class FavouritesListVC: GFDataLoadingVC {
         getFavourites()
     }
     
+    @available(iOS 17.0, *)
+    override func updateContentUnavailableConfiguration(using state: UIContentUnavailableConfigurationState) {
+        if favourites.isEmpty {
+            var config = UIContentUnavailableConfiguration.empty()
+            config.image = UIImage(systemName: "star")
+            config.text = "No favourites"
+            config.secondaryText = "Add a favourite on the follower list screen"
+            contentUnavailableConfiguration = config
+        } else {
+            contentUnavailableConfiguration = nil
+        }
+    }
+    
     func configureViewController() {
         view.backgroundColor = .systemBackground
         title = "Favourites"
@@ -50,14 +63,24 @@ class FavouritesListVC: GFDataLoadingVC {
     }
     
     func updateUI(with favourites: [Follower]) {
-        if favourites.isEmpty {
-            showEmptyStateView(with: "No Favourites?\nAdd on the follower screen", view: self.view)
-        } else {
+        if #available(iOS 17.0, *) {
             self.favourites = favourites
+            setNeedsUpdateContentUnavailableConfiguration()
             
             DispatchQueue.main.async {
                 self.tableView.reloadData()
                 self.view.bringSubviewToFront(self.tableView)
+            }
+        } else {
+            if favourites.isEmpty {
+                showEmptyStateView(with: "No Favourites?\nAdd on the follower screen", view: self.view)
+            } else {
+                self.favourites = favourites
+                
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                    self.view.bringSubviewToFront(self.tableView)
+                }
             }
         }
     }
@@ -90,7 +113,11 @@ extension FavouritesListVC: UITableViewDelegate, UITableViewDataSource {
                 self.favourites.remove(at: indexPath.row)
                 tableView.deleteRows(at: [indexPath], with: .left)
                 
-                if self.favourites.isEmpty { showEmptyStateView(with: "No Favourites?\nAdd on the follower screen", view: self.view) }
+                if #available(iOS 17.0, *) {
+                    setNeedsUpdateContentUnavailableConfiguration()
+                } else {
+                    if self.favourites.isEmpty { showEmptyStateView(with: "No Favourites?\nAdd on the follower screen", view: self.view) }
+                }
                 return
             }
             DispatchQueue.main.async {
